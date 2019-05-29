@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>Лайфхаки</title>
+<style>
+	* {box-sizing: border-box;}
+body {
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;	
+  }
+}
+ .foo {background: black;
+border: 2px solid black;
+text-align: left;
+color: white; 
+}
+.flex {
+display: flex;
+flex-direction: row;
+}
+P {margin-top: 0;
+margin-bottom: 0; 
+line-height: 1.5;
+text-indent: 40px;
+font-size: 18px;
+color: black;
+}
+@media (max-width: 600px) {
+P {
+margin-top: 0;
+margin-bottom: 0; 
+line-height: 1.5;
+text-indent: 30px;
+font-size: 16px;
+color: black;
+}
+}
+@media (min-width: 1800px) {
+P {
+margin-top: 0;
+margin-bottom: 0; 
+line-height: 1.5;
+text-indent: 30px;
+font-size: 26px;
+color: black;
+}
+}
+.fa {
+width: 60px;
+height: 60px;
+}
+.photo {
+width: 100%;
+height: 800px;
+background: url("https://vocnuft.volyn.ua/newvtnuft/wp-content/uploads/2017/09/1920_1200_819631222.jpg") no-repeat;
+background-size: 100% 100%;
+}
+@media (max-width: 600px) {
+.photo {
+width: 100%;
+height: 300px;
+background: url("https://vocnuft.volyn.ua/newvtnuft/wp-content/uploads/2017/09/1920_1200_819631222.jpg") no-repeat;
+background-size: 100% 100%;
+}
+}
+@media (min-width: 1800px) {
+.photo {
+width: 100%;
+height: 1000px;
+background: url("https://vocnuft.volyn.ua/newvtnuft/wp-content/uploads/2017/09/1920_1200_819631222.jpg") no-repeat;
+background-size: 100% 100%;
+}
+}
+.but {
+width: 300px;
+height: 60px;
+background-color: #228B22;
+color: white;
+text-align: center;
+border-radius: 10%;
+border: 0;
+font-family: segoe script;
+font-size: 20px;
+margin-top: 300px;
+margin-left: 550px;
+}
+@media (max-width: 600px) {
+.but {
+width: 150px;
+height: 30px;
+background-color: #228B22;
+color: white;
+text-align: center;
+border-radius: 10%;
+border: 0;
+font-family: segoe script;
+font-size: 10px;
+margin-top: 105px;
+margin-left: 115px;
+}
+}
+@media (min-width: 1800px) {
+.but {
+width: 350px;
+height: 60px;
+background-color: #228B22;
+color: white;
+text-align: center;
+border-radius: 10%;
+border: 0;
+margin: auto;
+font-family: segoe script;
+font-size: 20px;
+margin-top: 360px;
+margin-left: 800px;
+}
+}
+.zagolovok {
+font-size: 25px;
+font-family: segoe script;
+}
+@media (max-width: 600px) {
+.zagolovok {
+font-size: 20px;
+font-family: segoe script;
+}
+}
+@media (min-width: 1800px) {
+.zagolovok {
+font-size: 30px;
+font-family: segoe script;
+}
+}
+.kursiv {
+font-size: 18px;
+}
+@media (max-width: 600px) {
+.kursiv {
+font-size: 16px;
+}
+}
+@media (min-width: 1800px) {
+.kursiv {
+font-size: 25px;
+}
+}
+.ul {
+margin-top: 0;
+margin-bottom: 0; 
+line-height: 1.5;
+font-size: 18px;
+color: black;
+}
+@media (max-width: 600px) {
+.ul {
+margin-top: 0;
+margin-bottom: 0; 
+line-height: 1.5;
+font-size: 16px;
+color: black;
+}
+}
+@media (min-width: 1800px) {
+.ul {
+margin-top: 0;
+margin-bottom: 0; 
+line-height: 1.5;
+font-size: 25px;
+color: black; }
+}
+.life {
+font-size: 40px;
+font-family: segoe script;
+text-align: center;
+}
+@media (max-width: 600px) {
+.life {
+font-size: 30px;
+font-family: segoe script;
+text-align: center;
+}
+}
+@media (min-width: 1800px) {
+.life {
+font-size: 40px;
+font-family: segoe script;
+text-align: center;
+}
+.v {
+margin-right: 5px;
+margin-left: 5px;
+} 
+	</style>
+  </head>
+   <body>
+<div class = "photo">
+<form method = "get" 
+action = "https://www.flyuia.com/ua/ua/home?gclid=Cj0KCQjwz6PnBRCPARIsANOtCw2WpEgLd6F2YqxSKFNIRcynSKKZe1R8GTC66sYBwbpZI1BGtugY8qsaArlPEALw_wcB">
+<button type = "submit" class = "but">Замовити авіаквиток</button></form></div>
+<div class="topnav">
+  <a class="active" href="https://dzolha.github.io/index.html">Головна</a>
+  <a href="https://dzolha.github.io/Об'єкти.html">Об'єкти</a>
+  <a href="https://dzolha.github.io/Галерея.html">Галерея</a>
+ <a href="https://dzolha.github.io/Країни">Країни</a>
+  <a href="https://dzolha.github.io/Лайфхаки">Лайфхаки</a>
+  <a href="https://forms.gle/tVucDHaDKLRZBiC99">Побажання</a>
+ <form action="http://google.com/search" target="_blank">
+  <input type="text" placeholder="Search.." name="q">
+</form>
+</div>
+<div class = "v">
+<p class = "life">Корисні лайфхаки</p>
+<p class= "kursiv"><i>Подорожуючи, ми переносимось до незнайомого середовища. Недивно, що воно приховує в собі багато секретів. 
+    Як не зіпсувати відпочинок, а, навпаки, отримати від нього максимум? Вам допоможуть наші лайфхаки.</i></p>
+	<p class = "zagolovok"><b>1)</b>Смартфон і лохотрон</p>
+	<p>На відпочинку ми часто беремо в оренду автомобіль, мопед, селимося в готелі.
+	<i>Лайфхак:</i> берете в оренду байк? Зніміть його на відео «навколо» на свій смартфон. Для цього неспішно обійдіть байк з увімкненою камерою. 
+	Не потрібно нічого запам’ятовувати, не потрібно шукати подряпини й вм’ятини. Просто знімайте.
+	Навіщо це потрібно? Не секрет, що є ціла схема «розводу» довірливих туристів, коли їм починають пред’являти якісь подряпини, 
+	котрі турист не помітив, беручи байк. Тепер же у вас є відеодоказ того, що вони з’явилися до вас. 
+	Крім того, помітивши як ви знімаєте, зловмисник не буде навіть пробувати вас надурити. Лайфхак універсальний. 
+	Ви можете його задіяти і в Україні. Наприклад, коли здаєте автомобіль на мийку чи в автосервіс. Або перед тим, як зняти квартиру 
+	(пустити квартирантів).</p>
+	<p class = "zagolovok"><b>2)</b>Знайомство з місцевими жителями</p>
+	<p>Щоб пізнати чужу країну, прийнято лазити на форумах і розпитувати поради у бувалих мандрівників… Але є спосіб кращий!
+	<i>Лайфхак:</i> познайомтесь з аборигенами. Завдяки їм ви зможете дізнатися:</p>
+	<ul class = "ul">
+	<li>як зекономити на продуктах і послугах;</li>
+	<li>які продукти варто їсти, а від яких краще утриматися;</li>
+	<li>які нетуристичні місця варто відвідати;</li>
+	<li>які місцеві особливості в політиці, культурі й релігії.</li>
+	</ul>
+	<p>Збираєтесь вирушити у довгу подорож? Завчасно потоваришуйте з місцевим жителем. Адже інтернет й соцмережі це легко дозволяють.
+	</p>
+	<p class = "zagolovok"><b>3)</b>Правильний чек-ліст у дорогу</p>
+	<p>Потрібно складати список речей, які ви берете з собою в дорогу. Це знають багато туристів. Це не лайфхак.
+	<i>Лайфхак:</i> писати на початку списку те, без чого подорож просто не відбудеться або буде зіпсована:</p>
+	<ul class = "ul">
+	<li>паспорти;</li>
+	<li>гроші й банківські картки;</li>
+	<li>квитки;</li>
+	<li>ваучери на поселення;</li>
+	<li>для певних — медикаменти;</li>
+	<li>якщо діти їдуть за кордон з одним з батьків, то обов’язково потрібно мати завірений нотаріусом дозвіл на вивезення дитини від іншого з батьків.</li>
+	</ul>
+	<p class = "zagolovok"><b>4)</b>Мистецтво пакування</p>
+	<p>Під час сезонної зміни гардеробу часто виникає питання вільного місця. Крім того під час тривалого зберігання речі припадають пилом. Що робити?
+	   <i>Лайфхак:</i> використовуйте вакуумні пакети, з яких за допомогою спеціального насосу або навіть простого пилососу відкачайте повітря.
+	   Завдяки такій упаковці, наприклад, зимової ковдри її об’єм зменшується втричі.
+	   Особливо вакуумні пакети виручають в подорожах, коли хочеться взяти побільше речей, а валіза всього одна.</p>
+	<p class = "zagolovok"><b>5)</b>Черевик-футляр</p>
+	<p>Берете у подорож взуття? Лайфхак: використовуйте його як футляр! В черевики можна скласти крихкі предмети: окуляри, гаджети, сувеніри. 
+	Або скручені у трубочку речі задля економії місця. Це також вбереже черевики від прогинання.</p>
+	<p class = "zagolovok"><b>6)</b>Скручуйте трубочки</p>
+	<p><i>Лайфхак:</i> пакуючи валізу, скручуйте все, що можна, в трубочку. Що це дає:</p>
+	<ul class = "ul">
+	<li>економимо до 30% місця;</li>
+	<li>речі менше мнуться;</li>
+	<li>їх зручно діставати, якщо вони знадобляться, не перериваючи всю валізу.</li>
+	</ul>
+	<p class = "zagolovok"><b>7)</b>Різнокольорова подорож</p>
+	<p>Коли подорожуєш родиною, у валізі інколи неможливо розібратися, де чиї речі. <i>Лайфхак:</i> збираючи речі в подорож, розділіть валізу на зони: 
+	наприклад, для чоловіка/дружини — червоні пакети, для дитини — білі, для себе — кольорові. Так само підготуйте окремо для кожного сумки з 
+	банними речами й змінною білизною.</p>
+	<p class = "zagolovok"><b>8)</b>Невинний!</p>
+	<p>Постійне відчуття втоми — справжня проблема сучасних людей. Приходиш з роботи, і немає сил вже ні на що, окрім телевізора. 
+	Кажуть, потрібно більше відпочивати. Але і поїздки на море, і шашлик на вихідних, і навіть масаж — ніщо не допомагає! Знайомо? 
+	Скоріше за все, ви робите одну малопомітну, але популярну помилку. Ви відпочиваєте з відчуттям провини.
+	<i>Лайфхак:</i> ви заслужили відпочинок. Скажіть собі й іншим це голосно й чітко. Тільки тоді відпочинок йде на користь й відновлює ваші сили. 
+	Відпочинок необхідний. Люди, котрі не відпочивають, нічого й ніколи не досягають! Вбивайте у зародку відчуття провини за відпочинок!</p>
+	<p class = "zagolovok"><b>9)</b>Фотографічна пам’ять</p>
+	<p>Лайфхак: заведіть звичку фотографувати будь-які документи, що проходять через ваші руки в поїздці, — чеки, білети, посадкові талони. 
+	Хай вони залишаться в пам’яті телефону. Якщо з оригіналами трапиться неприємність (втрата або крадіжка) — це краще ніж нічого. 
+	Ніколи не знаєш, коли це може знадобитися.А чому ні? Камери смартфонів потужні, місця на диску — завались. Потрібно це використовувати! 
+	До речі, просунуті користувачі можуть зберігати ще одну копію в хмарному сховищі, наприклад, Dropbox чи Google Drive.</p>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	 <footer class="foo">
+	 <div class = "row">
+	 <div class = "col-md-3">Контакти:
+	 <ul>
+	 <li>Телефон: +380633201568</li>
+	 <li>Email: monsarda11@gmail.com</li>
+	 </ul></div>
+	 <div class = "col-md-6">
+	 <div>Сподобалось? Розкажіть про нас в соціальних мережах!</div>
+	 <a href = "https://www.facebook.com/" target="_blank">
+	 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/1200px-Facebook_F_icon.svg.png" 
+	 class = "fa" alt = "fasebook"/></a>
+	 <a href = "https://twitter.com" target="_blank">
+	 <img src = "http://4.bp.blogspot.com/-oKLHkmavYpY/T8-ezjWokEI/AAAAAAAABU4/SugLyRK-xZY/s1600/New+Twitter+logo.png" 
+	 class = "fa" alt = "Twitter"/></a>
+	 <a href = "https://www.instagram.com" target="_blank">
+	 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/250px-Instagram_icon.png" 
+	 class = "fa" alt = "Instagram"/></a>
+	 <a href = "https://web.telegram.org" target="_blank">
+	 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png" 
+	 class = "fa" alt = "Telegram"/></a>
+	 <a href = "https://www.whatsapp.com" target="_blank"><img src = "https://cdn2.downdetector.com/static/uploads/logo/whatsapp-messenger.png" 
+	 class = "fa" alt = "WhatsApp"/></a>
+	 <a href = "https://www.pinterest.com/" target="_blank"><img src = "https://yt3.ggpht.com/a/AGF-l7_k2fjylYu0fKdlqsKm7ODsSut8vbrbjmFrdw=s900-mo-c-c0xffffffff-rj-k-no" 
+	 class = "fa" alt = "Pinterest"/></a>
+	 </div>
+	 <div class = "col-md-3">
+	 <script>
+var todayDate = new Date();
+var currYear = todayDate.getFullYear();
+var currMonth = todayDate.getMonth()+1;
+var currDay = todayDate.getDate();
+document.write("Сьогоднішня дата: ");
+document.write(currDay + "-" + currMonth + "-" + currYear);
+</script>
+<div><script>
+var todayTime = new Date();
+var currHour = todayTime.getHours();
+var currMinute = todayTime.getMinutes();
+var currSecond = todayTime.getSeconds();
+document.write("Час: ");
+document.write(currHour + ":" + currMinute + ":" + currSecond);
+</script></div>
+	 </div>
+	 </div>
+	 </footer>
+	 </body> 
+</html>
